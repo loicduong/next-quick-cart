@@ -21,18 +21,19 @@ export default function ProductPage() {
 
   const [productData, setProductData] = useState<Product | null>(null);
 
-  const fetchProductData = async () => {
-    const product = products.find(product => product._id === id);
-
-    setProductData(product || null);
-  }
-
   useEffect(() => {
+    const fetchProductData = () => {
+      const product = products.find(product => product._id === id);
+
+      setProductData(product || null);
+    }
+
     fetchProductData();
-  }, [id, products.length])
+  }, [products, id])
 
   return productData ? (<>
     <Navbar />
+
     <div className="px-6 md:px-16 lg:px-32 pt-14 space-y-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div className="px-5 lg:px-16 xl:px-20">

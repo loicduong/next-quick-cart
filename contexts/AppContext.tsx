@@ -30,11 +30,11 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
   const currency = process.env.NEXT_PUBLIC_CURRENCY
 
-  const fetchProductData = async () => {
+  const fetchProductData = () => {
     setProducts(productsDummyData)
   }
 
-  const addToCart = async (itemId: string) => {
+  const addToCart = (itemId: string) => {
     const cartData = structuredClone(cartItems);
 
     if (cartData[itemId]) {
