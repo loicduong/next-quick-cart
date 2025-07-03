@@ -28,7 +28,7 @@ export default function OrderSummary() {
     let totalAmount = 0;
 
     for (const items in cartItems) {
-      let itemInfo = products.find((product) => product._id === items);
+      const itemInfo = products.find((product) => product._id === items);
 
       if (cartItems[items] > 0 && itemInfo?.offerPrice) {
         totalAmount += itemInfo.offerPrice * cartItems[items];

@@ -1,5 +1,5 @@
-import Image from "next/image"
 import logoIcon from "@/assets/icons/logo.svg";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -47,14 +47,14 @@ export default function Footer() {
             <div className="text-sm space-y-2">
               <p>+1-234-567-890</p>
 
-              <p>contact@greatstack.dev</p>
+              <p>contact@loicduong.com</p>
             </div>
           </div>
         </div>
       </div>
 
       <p className="py-4 text-center text-xs md:text-sm">
-        Copyright 2025 © GreatStack.dev All Right Reserved.
+        Copyright 2025 © Loic Duong All Right Reserved.
       </p>
     </footer>
   );

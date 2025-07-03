@@ -1,3 +1,9 @@
 {
-  "editor.rulers": [120]
+  "editor.rulers": [120],
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "prettier.enable": false,
 }

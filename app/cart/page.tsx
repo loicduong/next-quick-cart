@@ -12,7 +12,8 @@ export default function CartPage() {
   const { cartItems, products, router, setCartItems, addToCart, getCartCount } = useAppContext()
 
   const updateCartQuantity = async (itemId: string, quantity: number) => {
-    let cartData = structuredClone(cartItems);
+    const cartData = structuredClone(cartItems);
+
     if (quantity === 0) {
       delete cartData[itemId];
     } else {

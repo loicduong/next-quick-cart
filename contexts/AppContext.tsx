@@ -1,9 +1,9 @@
 'use client'
 
-import { Product } from "@/types/product";
-import { createContext, useContext, useState, useEffect } from "react";
 import productsDummyData from "@/assets/dummies/products";
+import { Product } from "@/types/product";
 import { useRouter } from "next/navigation";
+import { createContext, useContext, useEffect, useState } from "react";
 
 interface AppContextType {
   products: Product[];
@@ -35,7 +35,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   }
 
   const addToCart = async (itemId: string) => {
-    let cartData = structuredClone(cartItems);
+    const cartData = structuredClone(cartItems);
 
     if (cartData[itemId]) {
       cartData[itemId] += 1;
@@ -48,11 +48,13 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
   const getCartCount = () => {
     let totalCount = 0;
+
     for (const items in cartItems) {
       if (cartItems[items] > 0) {
         totalCount += cartItems[items];
       }
     }
+
     return totalCount;
   }
 

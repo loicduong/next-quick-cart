@@ -1,4 +1,4 @@
-const productsDummyData = [
+const data = [
   {
     "_id": "67a1f4e43f34a77b6dde9144",
     "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
@@ -144,4 +144,4 @@ const productsDummyData = [
   }
 ]
 
-export default productsDummyData;
+export default data;

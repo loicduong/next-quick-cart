@@ -1,12 +1,12 @@
+import { AppProvider } from "@/contexts/AppContext";
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
-import { AppProvider } from "@/contexts/AppContext";
 
 const outfit = Outfit({ subsets: ['latin'], weight: ["300", "400", "500"] });
 
 export const metadata: Metadata = {
-  title: "QuickCart - GreatStack",
+  title: "Quick Cart - Loic Duong",
   description: "E-Commerce with Next.js ",
 };
 
