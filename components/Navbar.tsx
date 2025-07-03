@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image"
-import { useAppContext } from "@/contexts/AppContext";
 import logoIcon from "@/assets/icons/logo.svg";
-import Link from "next/link"
-import { useState } from "react";
 import searchIcon from "@/assets/icons/search.svg";
 import userIcon from "@/assets/icons/user.svg";
+import { useAppContext } from "@/contexts/AppContext";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
   const { router } = useAppContext();
@@ -15,7 +15,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
-      <Image className="cursor-pointer w-28 md:w-32" onClick={() => router.push('/')} src={logoIcon} alt="logo" />
+      <Image className="cursor-pointer w-7.5 md:w-8.5" onClick={() => router.push('/')} src={logoIcon} alt="logo" />
 
       <div className="flex items-center gap-4 lg:gap-8 max-md:hidden">
         <Link href="/" className="hover:text-gray-900 transition">

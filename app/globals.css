@@ -1,5 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brink-pink-50: #fef2f4;
+  --color-brink-pink-100: #fce7ea;
+  --color-brink-pink-200: #f9d2da;
+  --color-brink-pink-300: #f4adbc;
+  --color-brink-pink-400: #ed7f98;
+  --color-brink-pink-500: #e56283;
+  --color-brink-pink-600: #ce3060;
+  --color-brink-pink-700: #ad2350;
+  --color-brink-pink-800: #912048;
+  --color-brink-pink-900: #7c1f42;
+  --color-brink-pink-950: #450c21;
+}
+
 * {
   scroll-behavior: smooth;
 }

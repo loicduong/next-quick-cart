@@ -125,7 +125,7 @@ export default function ProductPage() {
               Add to Cart
             </button>
 
-            <button onClick={() => { addToCart(productData._id); router.push('/cart') }} className="w-full py-3.5 bg-orange-500 text-white hover:bg-orange-600 transition">
+            <button onClick={() => { addToCart(productData._id); router.push('/cart') }} className="w-full py-3.5 bg-brink-pink-500 text-white hover:bg-brink-pink-600 transition">
               Buy now
             </button>
           </div>
@@ -133,9 +133,9 @@ export default function ProductPage() {
       </div>
       <div className="flex flex-col items-center">
         <div className="flex flex-col items-center mb-4 mt-16">
-          <p className="text-3xl font-medium">Featured <span className="font-medium text-orange-600">Products</span></p>
+          <p className="text-3xl font-medium">Featured <span className="font-medium text-brink-pink-600">Products</span></p>
 
-          <div className="w-28 h-0.5 bg-orange-600 mt-2"></div>
+          <div className="w-28 h-0.5 bg-brink-pink-600 mt-2"></div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-6 pb-14 w-full">

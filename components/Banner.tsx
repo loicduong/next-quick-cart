@@ -1,8 +1,8 @@
-import Image from "next/image";
+import arrowWhiteIcon from "@/assets/icons/arrow-white.svg";
 import jblSoundboxImage from "@/assets/images/jbl-soundbox.png";
 import mdControllerImage from "@/assets/images/md-controller.png";
 import smControllerImage from "@/assets/images/sm-controller.png";
-import arrowWhiteIcon from "@/assets/icons/arrow-white.svg";
+import Image from "next/image";
 
 export default function Banner() {
   return (
@@ -16,7 +16,7 @@ export default function Banner() {
           From immersive sound to precise controls—everything you need to win
         </p>
 
-        <button className="group flex items-center justify-center gap-1 px-12 py-2.5 bg-orange-600 rounded text-white">
+        <button className="group flex items-center justify-center gap-1 px-12 py-2.5 bg-brink-pink-600 rounded text-white">
           Buy now
 
           <Image className="group-hover:translate-x-1 transition" src={arrowWhiteIcon} alt="arrow white icon" />

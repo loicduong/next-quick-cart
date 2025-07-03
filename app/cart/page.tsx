@@ -1,12 +1,12 @@
 "use client"
 
-import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import { useAppContext } from "@/contexts/AppContext";
-import OrderSummary from "@/components/OrderSummary";
+import arrowRightColoredIcon from "@/assets/icons/arrow-right-colored.svg";
 import decreaseArrowIcon from "@/assets/icons/decrease-arrow.svg";
 import increaseArrowIcon from "@/assets/icons/increase-arrow.svg";
-import arrowRightColoredIcon from "@/assets/icons/arrow-right-colored.svg";
+import Navbar from "@/components/Navbar";
+import OrderSummary from "@/components/OrderSummary";
+import { useAppContext } from "@/contexts/AppContext";
+import Image from "next/image";
 
 export default function CartPage() {
   const { cartItems, products, router, setCartItems, addToCart, getCartCount } = useAppContext()
@@ -29,7 +29,7 @@ export default function CartPage() {
         <div className="flex-1">
           <div className="flex items-center justify-between mb-8 border-b border-gray-500/30 pb-6">
             <p className="text-2xl md:text-3xl text-gray-500">
-              Your <span className="font-medium text-orange-600">Cart</span>
+              Your <span className="font-medium text-brink-pink-600">Cart</span>
             </p>
             <p className="text-lg md:text-xl text-gray-500/80">{getCartCount()} Items</p>
           </div>
@@ -71,7 +71,7 @@ export default function CartPage() {
                             />
                           </div>
                           <button
-                            className="md:hidden text-xs text-orange-600 mt-1"
+                            className="md:hidden text-xs text-brink-pink-600 mt-1"
                             onClick={() => updateCartQuantity(product._id, 0)}
                           >
                             Remove
@@ -80,7 +80,7 @@ export default function CartPage() {
                         <div className="text-sm hidden md:block">
                           <p className="text-gray-800">{product.name}</p>
                           <button
-                            className="text-xs text-orange-600 mt-1"
+                            className="text-xs text-brink-pink-600 mt-1"
                             onClick={() => updateCartQuantity(product._id, 0)}
                           >
                             Remove
@@ -114,7 +114,7 @@ export default function CartPage() {
               </tbody>
             </table>
           </div>
-          <button onClick={() => router.push('/all-products')} className="group flex items-center mt-6 gap-2 text-orange-600">
+          <button onClick={() => router.push('/all-products')} className="group flex items-center mt-6 gap-2 text-brink-pink-600">
             <Image
               className="group-hover:-translate-x-1 transition"
               src={arrowRightColoredIcon}

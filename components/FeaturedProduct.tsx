@@ -1,7 +1,7 @@
-import girlWithHeadphoneImage from "@/assets/images/girl-with-headphone.png";
-import girlWithEarphoneImage from "@/assets/images/girl-with-earphone.png";
-import boyWithLaptopImage from "@/assets/images/boy-with-laptop.png";
 import redirectIcon from "@/assets/icons/redirect.svg";
+import boyWithLaptopImage from "@/assets/images/boy-with-laptop.png";
+import girlWithEarphoneImage from "@/assets/images/girl-with-earphone.png";
+import girlWithHeadphoneImage from "@/assets/images/girl-with-headphone.png";
 import Image from "next/image";
 
 const products = [
@@ -31,7 +31,7 @@ export default function FeaturedProduct() {
       <div className="flex flex-col items-center">
         <p className="text-3xl font-medium">Featured Products</p>
 
-        <div className="w-28 h-0.5 bg-orange-600 mt-2"></div>
+        <div className="w-28 h-0.5 bg-brink-pink-600 mt-2"></div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-14 mt-12 md:px-14 px-4">
@@ -48,7 +48,7 @@ export default function FeaturedProduct() {
 
               <p className="text-sm lg:text-base leading-5 max-w-60">{description}</p>
 
-              <button className="flex items-center gap-1.5 bg-orange-600 px-4 py-2 rounded">
+              <button className="flex items-center gap-1.5 bg-brink-pink-600 px-4 py-2 rounded">
                 Buy now <Image className="h-3 w-3" src={redirectIcon} alt="Redirect Icon" />
               </button>
             </div>
