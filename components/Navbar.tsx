@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image"
-import { useRouter } from "next/navigation";
+import { useAppContext } from "@/contexts/AppContext";
 import logoIcon from "@/assets/icons/logo.svg";
 import Link from "next/link"
 import { useState } from "react";
@@ -9,7 +9,7 @@ import searchIcon from "@/assets/icons/search.svg";
 import userIcon from "@/assets/icons/user.svg";
 
 export default function Navbar() {
-  const router = useRouter()
+  const { router } = useAppContext();
 
   const [isSeller] = useState(true)
 

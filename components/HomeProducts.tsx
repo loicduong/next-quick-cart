@@ -1,11 +1,10 @@
 "use client";
 
-import products from "@/assets/dummies/products";
 import ProductCard from "./ProductCard";
-import { useRouter } from "next/navigation";
+import { useAppContext } from "@/contexts/AppContext";
 
 export default function HomeProducts() {
-  const router = useRouter()
+  const { products, router } = useAppContext();
 
   return (
     <div className="flex flex-col items-center pt-14">

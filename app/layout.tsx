@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { AppProvider } from "@/contexts/AppContext";
 
 const outfit = Outfit({ subsets: ['latin'], weight: ["300", "400", "500"] });
 
@@ -17,7 +18,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.className} antialiased text-gray-700`}>
-        {children}
+        <AppProvider>
+          {children}
+        </AppProvider>
       </body>
     </html>
   );

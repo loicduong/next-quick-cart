@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useAppContext } from "@/contexts/AppContext";
 import { Product } from "@/types/product";
 import Image from "next/image";
 import heartIcon from "@/assets/icons/heart.svg";
@@ -8,9 +8,7 @@ import starIcon from "@/assets/icons/star.svg";
 import starDullIcon from "@/assets/icons/star-dull.svg";
 
 export default function ProductCard({ product }: { product: Product }) {
-  const router = useRouter()
-
-  const currency = process.env.NEXT_PUBLIC_CURRENCY
+  const { router, currency } = useAppContext();
 
   return (
     <div
