@@ -1,7 +1,7 @@
 'use client'
 
 import orderDummyData from "@/assets/dummies/orders";
-import boxIcon from "@/assets/images/box.png";
+import boxIcon from "@/assets/icons/box.svg";
 import Footer from "@/components/Footer";
 import Loading from "@/components/Loading";
 import Navbar from "@/components/Navbar";
