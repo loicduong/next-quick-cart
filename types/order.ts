@@ -1,21 +1,10 @@
+import { Address } from "./address";
 import { Product } from "./product";
 
 interface OrderItem {
   product: Product;
   quantity: number;
   _id: string;
-}
-
-interface OrderAddress {
-  _id: string;
-  userId: string;
-  fullName: string;
-  phoneNumber: string;
-  pincode: number;
-  area: string;
-  city: string;
-  state: string;
-  __v: number;
 }
 
 export interface Order {
@@ -25,6 +14,6 @@ export interface Order {
   amount: number;
   status: string;
   date: number;
-  address: OrderAddress;
+  address: Address;
   __v: number;
 }

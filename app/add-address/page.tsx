@@ -1,3 +1,5 @@
+'use client'
+
 import myLocationIcon from "@/assets/icons/my-location.svg";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";

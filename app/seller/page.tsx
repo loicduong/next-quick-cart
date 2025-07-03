@@ -1,3 +1,5 @@
+'use client'
+
 import uploadAreaImage from '@/assets/images/upload-area.png';
 import Image from "next/image";
 import { useState } from "react";

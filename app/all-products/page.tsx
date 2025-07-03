@@ -1,7 +1,7 @@
 'use client'
 
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
 import { useAppContext } from "@/contexts/AppContext";
 
@@ -11,6 +11,7 @@ export default function AllProducts() {
   return (
     <>
       <Navbar />
+
       <div className="flex flex-col items-start px-6 md:px-16 lg:px-32">
         <div className="flex flex-col items-end pt-12">
           <p className="text-2xl font-medium">All products</p>
@@ -22,6 +23,7 @@ export default function AllProducts() {
           {products.map((product, index) => <ProductCard key={index} product={product} />)}
         </div>
       </div>
+
       <Footer />
     </>
   );

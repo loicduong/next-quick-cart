@@ -1,9 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react";
 import addressDummyData from "@/assets/dummies/addresses";
-import { Address } from "@/types/product";
 import { useAppContext } from "@/contexts/AppContext";
+import { Address } from "@/types/address";
+import { useEffect, useState } from "react";
 
 export default function OrderSummary() {
   const { router, getCartCount, currency, cartItems, products } = useAppContext();

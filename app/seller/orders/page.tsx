@@ -1,3 +1,5 @@
+'use client'
+
 import orderDummyData from '@/assets/dummies/orders';
 import boxIcon from '@/assets/icons/box.svg';
 import Loading from "@/components/Loading";

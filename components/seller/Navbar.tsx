@@ -1,3 +1,5 @@
+'use client'
+
 import logoIcon from '@/assets/icons/logo.svg';
 import { useAppContext } from '@/contexts/AppContext';
 import Image from 'next/image';

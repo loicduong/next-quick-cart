@@ -1,16 +1,16 @@
 "use client"
 
-import Navbar from "@/components/Navbar";
+import starDullIcon from "@/assets/icons/star-dull.svg";
+import starIcon from "@/assets/icons/star.svg";
 import Footer from "@/components/Footer";
+import Loading from "@/components/Loading";
+import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
-import Image from "next/image";
-import { useState, useEffect } from "react";
 import { useAppContext } from "@/contexts/AppContext";
 import { Product } from "@/types/product";
+import Image from "next/image";
 import { useParams } from "next/navigation";
-import starIcon from "@/assets/icons/star.svg";
-import starDullIcon from "@/assets/icons/star-dull.svg";
-import Loading from "@/components/Loading";
+import { useEffect, useState } from "react";
 
 export default function ProductPage() {
   const { id } = useParams();

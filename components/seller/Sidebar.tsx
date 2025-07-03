@@ -1,3 +1,5 @@
+'use client'
+
 import addIcon from '@/assets/icons/add.svg';
 import orderIcon from '@/assets/icons/order.svg';
 import productListIcon from '@/assets/icons/product-list.svg';
