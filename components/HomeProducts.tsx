@@ -1,7 +1,7 @@
 "use client";
 
-import ProductCard from "./ProductCard";
 import { useAppContext } from "@/contexts/AppContext";
+import ProductCard from "./ProductCard";
 
 export default function HomeProducts() {
   const { products, router } = useAppContext();
@@ -16,7 +16,7 @@ export default function HomeProducts() {
 
       <button
         onClick={() => { router.push('/all-products') }}
-        className="px-12 py-2.5 border rounded text-gray-500/70 hover:bg-slate-50/90 transition"
+        className="px-12 py-2.5 border rounded text-gray-500/70 hover:bg-slate-50/90 transition cursor-pointer"
       >
         See more
       </button>

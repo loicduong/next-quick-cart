@@ -125,7 +125,7 @@ export default function ProductPage() {
               Add to Cart
             </button>
 
-            <button onClick={() => { addToCart(productData._id); router.push('/cart') }} className="w-full py-3.5 bg-brink-pink-500 text-white hover:bg-brink-pink-600 transition">
+            <button onClick={() => { addToCart(productData._id); router.push('/cart') }} className="w-full py-3.5 bg-brink-pink-500 text-white hover:bg-brink-pink-600 transition cursor-pointer">
               Buy now
             </button>
           </div>

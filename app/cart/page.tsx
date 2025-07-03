@@ -114,7 +114,7 @@ export default function CartPage() {
               </tbody>
             </table>
           </div>
-          <button onClick={() => router.push('/all-products')} className="group flex items-center mt-6 gap-2 text-brink-pink-600">
+          <button onClick={() => router.push('/all-products')} className="group flex items-center mt-6 gap-2 text-brink-pink-600 cursor-pointer">
             <Image
               className="group-hover:-translate-x-1 transition"
               src={arrowRightColoredIcon}
